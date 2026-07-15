@@ -1,0 +1,51 @@
+.console-page-container {
+    min-height: 80vh; /* Full viewport height minus header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbfb; /* Very light subtle gray bg */
+    padding: 4rem 0;
+}
+
+.console-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.console-heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #387ed1; /* Zerodha Blue */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.console-subheading {
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.btn-primary {
+    background-color: #387ed1;
+    border-color: #387ed1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #2b65ac;
+    border-color: #2b65ac;
+}
+
+.console-hero-img {
+    transition: transform 0.3s ease;
+}
+
+.console-hero-img:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,63 @@
+.coin-page-container {
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.coin-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.coin-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #444; 
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.coin-subheading {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.btn-login {
+    background-color: #1a52c3; /* Coin Blue */
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px; /* Pill shape */
+}
+
+.btn-login:hover {
+    background-color: #123e9c;
+    color: white;
+}
+
+.btn-explore {
+    background-color: transparent;
+    color: #1a52c3;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 40px;
+    border: 2px solid #1a52c3;
+    border-radius: 50px;
+}
+
+.btn-explore:hover {
+    background-color: #f0f6ff;
+    color: #1a52c3;
+}
+
+.gap-3 {
+    gap: 1rem;
+}

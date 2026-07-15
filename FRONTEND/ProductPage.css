@@ -1,0 +1,138 @@
+.product-hero-container {
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.product-hero-container h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-hero-container h3 {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.product-hero-container p {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* Shared styles for sections */
+.product-section-left, .product-section-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    gap: 4rem;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-text {
+    flex: 1;
+}
+
+.product-image {
+    flex: 1.2;
+}
+
+.product-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.product-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.product-links {
+    margin-bottom: 1.5rem;
+}
+
+.product-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+.product-stores img {
+    height: 40px; /* Badge size */
+    width: auto;
+}
+
+/* Universe Section */
+.product-universe-container {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.universe-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.universe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.universe-item img {
+    max-width: 150px;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.universe-item img:hover {
+    opacity: 1;
+}
+
+.universe-item p {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .product-section-left, .product-section-right {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+
+    /* For mobile, we might want image on top always. 
+       RightSection has image second in HTML, so we use flex-direction column-reverse or just order */
+    .product-section-right {
+        flex-direction: column-reverse; 
+    }
+    
+    .product-links {
+        display: flex;
+        justify-content: center;
+    }
+}

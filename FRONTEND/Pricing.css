@@ -1,0 +1,51 @@
+.pricing-hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.pricing-hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.pricing-hero h3 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+/* 3-box Header Layout */
+.pricing-header-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto 5rem auto;
+}
+
+.pricing-box {
+    flex: 1;
+    text-align: center;
+}
+
+.pricing-box img {
+    width: 250px;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-box h2 {
+    font-size: 1.75rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.pricing-box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}

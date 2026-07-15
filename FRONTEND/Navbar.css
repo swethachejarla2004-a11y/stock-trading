@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10rem; /* Wide padding like Zerodha */
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #387ed1;
+}
+
+.menu-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Mega Menu */
+.menu-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 50px; /* Aligned to the hamburger menu */
+    background: white;
+    width: 600px;
+    box-shadow: 2px 5px 20px rgba(0,0,0,0.1);
+    border: 1px solid #f1f1f1;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.menu-item-product {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+    transition: opacity 0.2s;
+}
+.menu-item-product:hover {
+    opacity: 0.8;
+}
+
+.menu-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-column h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.menu-column a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.menu-column a:hover {
+    color: #387ed1;
+}
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+    
+    .menu-dropdown {
+        right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide standard links on mobile, ideally replace with toggle */
+    }
+}

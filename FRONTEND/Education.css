@@ -1,0 +1,72 @@
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 6rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.education-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.education-image img {
+    max-width: 80%; /* Don't take full width to balance with text */
+    height: auto;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-content h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.education-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.education-content a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.2s;
+    display: inline-block;
+}
+
+.education-content a:hover {
+    color: #0056b3;
+}
+
+.mt-4 { /* Utility class for spacing the second block */
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        text-align: left; /* Keep left align like Zerodha's often is on mobile, or center it */
+        gap: 3rem;
+        padding: 4rem 1.5rem;
+    }
+    
+    .education-image {
+        order: -1; /* Image on top on mobile? Standard practice */
+        width: 100%;
+    }
+    
+    .education-image img {
+        max-width: 60%; /* Smaller image on mobile */
+    }
+}

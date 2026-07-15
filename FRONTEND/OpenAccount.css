@@ -1,0 +1,41 @@
+.open-account-container {
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.open-account-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.open-account-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* btn-primary is already defined in Hero.css usually, but we define it here again or assume global styles later. */
+/* For now, let's keep it self-contained or rely on global class if you wish. I'll add it here for safety. */
+.open-account-container .btn-primary {
+    padding: 0.8rem 2.5rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.open-account-container .btn-primary:hover {
+    background-color: #0056b3;
+}
