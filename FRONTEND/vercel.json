@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://trading-platform-mern.vercel.app/$1"
+    }
+  ]
+}
